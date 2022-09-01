@@ -1,0 +1,70 @@
+﻿<script src="~/js/FormAdd.js"></script>
+<script src="~/js/AddPageUploadFile.js"></script>
+<script src="~/js/UlkeSec.js"></script>
+<script src="~/js/SehirSec.js"></script>
+<script src="~/js/AddPageZorunluluklar.js"></script>
+
+<div id="myModal">
+    <h2>Add Form</h2>
+    <div class="modal-body">
+        <form id="Form">
+
+            <div class="form-group">
+                <label for="FullName">FullName</label>
+                <input type="text" class="form-control" id="FullName" placeholder="Full Name" />
+                
+            </div>
+            <div class="form-group">
+                <label for="Adress">Adress</label>
+                <input type="text" class="form-control" id="Adress" placeholder="Adress" />
+               
+            </div>
+            <div class="form-group">
+                <label for="Mail">Email</label>
+                <input type="text" class="form-control" id="Mail" placeholder="Email" />
+               
+            </div>
+            <div class="form-group">
+                <label for="Telephone">Phone Number</label>
+                <input type="number" class="form-control" id="Telephone" placeholder="Phone Number" />
+                
+            </div>
+
+
+            <select id="GetUlke" onchange="GetSehirByUlke()">
+                @* dropdown ülke ve şehir coloumn*@
+            </select>
+            <br />
+            <br />
+
+            <select id="GetSehir">
+            </select>
+            <br />
+            <br />
+
+            <div class="upload-button">
+                <input id="FileUpload" name="fileUpload" onchange="uploadFiles();" type="file" /><br /> @*dosya yükleme frontend *@
+                <br />
+                <div id="divimg">
+                    <img medyaid="" src="" id="imdidbas" />
+
+                </div>
+                @* <img id="ImgGos" src="" width="250" height="250" />*@
+                @*<input type="button"  value="Upload" class="btn btn-primary" />*@
+                <br />
+
+                <div id="TekrarliAlan">
+                    <button type="button" id="AlanAcId" onclick="AlanAc()">Öğrenim Geçmişi Ekle </button>
+                    <br />
+                    <br />
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-primary" onclick="btnAdd()">Add Form</button>
+
+    </div>
+
+</div>

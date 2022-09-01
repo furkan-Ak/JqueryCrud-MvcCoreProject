@@ -1,0 +1,79 @@
+﻿@{
+    Layout = "_Layout";
+}
+<script src="~/Scripts/bootstrap.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+@*<link rel="stylesheet" type="text/css" href="/DataTables/datatables.css">*@
+@*<script type="text/javascript" charset="utf8" src="/DataTables/datatables.js"></script>*@
+<script src="~/js/JavaScript.js"></script>
+<script src="~/js/UpdateJS.js"></script> @*script pagelerin tanımalamaları ana page de verildi .*@
+<script src="~/js/FormAdd.js"></script>
+<script src="~/js/AddPageUploadFile.js"></script>
+
+
+@*
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+
+
+
+        </div>
+    </div>
+</div>*@
+<div>
+    <h2>Form Ekle</h2>
+    <button type="button" class="btn btn-primary" onclick="AddPageOpen()">Form Ekle</button><br /><br />
+</div>
+
+
+
+@*<button type="button" class="btn btn-primary" onclick="FormuGetir()"> Formları Getir</button>*@
+
+<table id="tblform" class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                FullName
+            </th>
+            <th>
+                Adress
+            </th>
+            <th>
+                Mail
+            </th>
+            <th>
+                Telephone
+            </th>
+             <th>
+                Ülke
+            </th>
+             <th>
+                Şehir
+            </th>
+
+             <th>
+                Image
+            </th>
+            <th>
+                Update
+            </th>
+            <th>
+                Delete
+            </th>
+        </tr>
+    </thead>
+    <tbody id="tbody1" class="tbody">
+    </tbody>
+</table>
+
+
+
+
+
